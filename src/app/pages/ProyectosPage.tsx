@@ -11,12 +11,20 @@ import Bg3 from '../../assets/proy3.jpg';
 
 const CATEGORIES = ['Todos', ...Array.from(new Set(PROJECTS.map((p) => p.category)))];
 
-const CATEGORY_COLORS = {
-  Perforación: 'bg-orange-100 text-orange-800',
-  Limpieza: 'bg-green-100 text-green-800',
-  Mantenimiento: 'bg-blue-100 text-blue-800',
-  Municipal: 'bg-purple-100 text-purple-800',
-  Institucional: 'bg-indigo-100 text-indigo-800',
+// const CATEGORY_COLORS = {
+//   Perforación: 'bg-orange-100 text-orange-800',
+//   Limpieza: 'bg-green-100 text-green-800',
+//   Mantenimiento: 'bg-blue-100 text-blue-800',
+//   Municipal: 'bg-purple-100 text-purple-800',
+//   Institucional: 'bg-indigo-100 text-indigo-800',
+// };
+
+const CATEGORY_COLORS: { [key: string]: string } = {
+  'Perforación': 'bg-orange-100 text-orange-800',
+  'Limpieza': 'bg-green-100 text-green-800',
+  'Mantenimiento': 'bg-blue-100 text-blue-800',
+  'Municipal': 'bg-purple-100 text-purple-800',
+  'Institucional': 'bg-indigo-100 text-indigo-800',
 };
 
 export default function ProyectosPage() {

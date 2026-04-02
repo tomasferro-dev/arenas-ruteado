@@ -33,25 +33,25 @@ export default function Header({ mode }: HeaderProps) {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
-  const scrollToSection = (id: string) => {
-    if (location.pathname !== '/home') {
-      navigate('/home');
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) {
-          const offset = 80;
-          window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
-        }
-      }, 300);
-    } else {
-      const el = document.getElementById(id);
-      if (el) {
-        const offset = 80;
-        window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
-      }
-    }
-    setIsMobileMenuOpen(false);
-  };
+  // const scrollToSection = (id: string) => {
+  //   if (location.pathname !== '/home') {
+  //     navigate('/home');
+  //     setTimeout(() => {
+  //       const el = document.getElementById(id);
+  //       if (el) {
+  //         const offset = 80;
+  //         window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
+  //       }
+  //     }, 300);
+  //   } else {
+  //     const el = document.getElementById(id);
+  //     if (el) {
+  //       const offset = 80;
+  //       window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
+  //     }
+  //   }
+  //   setIsMobileMenuOpen(false);
+  // };
 
   const bgClass =
     mode === 'home'

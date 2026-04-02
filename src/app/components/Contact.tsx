@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, MapPin, Clock, Mail, Linkedin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { CONTACT } from "../data";
-import logo from '../../assets/logo.png'
+
 
 interface ContactProps {
   compact?: boolean; // true = versión /home
