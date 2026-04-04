@@ -7,6 +7,8 @@ import bobinado1 from '../assets/bobinado1.jpg';
 import bomba1 from '../assets/bomba1.jpg';
 import mantenimiento1 from '../assets/mantenimiento1.jpg';
 import estudio2 from '../assets/estudio2.jpg';
+import lujan1 from '../assets/proyectos/muni-lujan/lujan1.jpg';
+import lujan2 from '../assets/proyectos/muni-lujan/lujan2.jpg';
 
 export interface Service {
   id: string;
@@ -29,8 +31,8 @@ export interface Project {
   description: string;
   location: string;
   category: string;
-  coverImage: string;
-  images: string[]; // múltiples imágenes
+  coverImage: string | any;
+  images:  (string | any)[];
   // Las imágenes adicionales se cargan dinámicamente por carpeta en Gallery
   imageFolder?: string;
 }
@@ -281,7 +283,7 @@ export const PROJECTS: Project[] = [
       'Limpieza exhaustiva de pozo surgente con reactivación completa del caudal original.',
     location: 'Mendoza, Argentina',
     category: 'Limpieza',
-    coverImage: '/assets/limpieza/cover.jpg',
+    coverImage: '../assets/proyectos/muni-lujan/lujan1.jpg',
     images: [perfo2],
     imageFolder: 'limpieza',
   },
@@ -314,8 +316,8 @@ export const PROJECTS: Project[] = [
       'Servicio especializado para la Municipalidad de Luján de Cuyo, Mendoza.',
     location: 'Luján de Cuyo, Mendoza',
     category: 'Municipal',
-    coverImage: '/assets/muni-lujan/cover.jpg',
-    images: [],
+    coverImage: perfo2,
+    images: [lujan1, lujan2],
     imageFolder: 'muni-lujan',
   },
   {

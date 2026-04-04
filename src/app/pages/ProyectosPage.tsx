@@ -115,9 +115,11 @@ export default function ProyectosPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-gray-700 to-gray-900 relative overflow-hidden">
 
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/* <div className="absolute inset-0 flex items-center justify-center">
                   <Images className="w-12 h-12 text-white/20" />
-                </div>
+                </div> */}
+                <img src={project.images[0]} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                
 
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <p className="text-white text-sm font-medium p-4">Ver proyecto →</p>

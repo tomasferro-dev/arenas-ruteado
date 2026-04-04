@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, MapPin, Images } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 import { PROJECTS } from '../data';
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -36,10 +36,8 @@ export default function Gallery({ preview = false }: GalleryProps) {
             >
               {/* Cover image placeholder (replace with actual img when assets available) */}
               <div className="aspect-square bg-gradient-to-br from-gray-700 to-gray-900 relative overflow-hidden">
-                {/* <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" /> */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Images className="w-12 h-12 text-white/30" />
-                </div>
+                <img src={project.images[0]} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                
 
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">

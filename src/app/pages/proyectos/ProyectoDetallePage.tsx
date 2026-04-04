@@ -13,7 +13,8 @@ export default function ProyectoDetallePage() {
   if (!project) return <Navigate to="/proyectos" replace />;
 
   // Placeholder images — replace with actual import.meta.glob images in production
-  const images: string[] = []; // project.images would go here
+  // const images: string[] = []; // project.images would go here
+  const images = project.images ?? [];
 
   const waMsg = encodeURIComponent(`Hola! Vi el proyecto "${project.title}" y quisiera consultar.`);
   const waUrl = `https://wa.me/${CONTACT.whatsappNumber}?text=${waMsg}`;
@@ -72,6 +73,8 @@ export default function ProyectoDetallePage() {
                       className="aspect-square rounded-lg overflow-hidden group relative"
                     >
                       <img src={src} alt={`${project.title} foto ${i + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      {/* <img src={src} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" /> */}
+                      
                       <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </button>
                   ))}
