@@ -28,6 +28,7 @@ const CATEGORY_COLORS: { [key: string]: string } = {
 };
 
 export default function ProyectosPage() {
+
   const [activeCategory, setActiveCategory] = useState('Todos');
 
   // 👇 CARRUSEL
@@ -49,6 +50,7 @@ export default function ProyectosPage() {
 
   return (
     <>
+    
       <Breadcrumb />
 
       {/* HERO con carrusel */}

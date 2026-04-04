@@ -1,5 +1,6 @@
 import perfo2 from '../assets/perfo2.jpg';
 import agua from '../assets/agua.jpg';
+import agua1 from '../assets/agua1.jpg';
 import filmacion1 from '../assets/filmacion1.jpg';
 import pesca5 from '../assets/pesca5.jpg';
 import bobinado1 from '../assets/bobinado1.jpg';
@@ -17,6 +18,7 @@ export interface Service {
   details: string[];
   image: string; // path relativo a /assets/
   images: string[]; // múltiples imágenes
+  imageDetail: string;
   icon: string;  // nombre del icono lucide
   gradient: string;
 }
@@ -61,37 +63,43 @@ export const SERVICES: Service[] = [
     ],
     image: perfo2,
     images: [perfo2, agua],
+    imageDetail: agua1,
     icon: 'Droplet',
     gradient: 'from-orange-500 to-red-600',
   },
   {
-    id: '2',
-    slug: 'electrobombas',
-    title: 'Reparación y Venta de Electrobombas',
-    shortDescription:
-      'Servicio especializado en reparación, bobinado y mantenimiento de electrobombas sumergibles de todo tipo y potencia.',
-    fullDescription:
-      'Somos especialistas en la reparación integral de electrobombas sumergibles. Nuestro taller cuenta con equipamiento técnico de alta precisión para el diagnóstico, desmontaje, bobinado, armado y prueba de electrobombas de cualquier marca y potencia. Realizamos trabajos de bobinado profesional, sustitución de rodamientos, sellos mecánicos y todo tipo de componentes internos.',
-    features: [
-      'Bobinados profesionales de alta calidad',
-      'Reparación completa garantizada',
-      'Toda marca y potencia',
-      'Prueba en banco antes de entrega',
-    ],
-    details: [
-      'Diagnóstico eléctrico y mecánico completo',
-      'Bobinado de estátores y rotores',
-      'Sustitución de rodamientos y sellos',
-      'Prueba de aislación y rendimiento',
-      'Reparación de motores monofásicos y trifásicos',
-      'Potencias desde 0.5 HP hasta 200 HP',
-    ],
-    image: '/assets/reparacion-electrobombas.jpg',
-    images: [bomba1],
-    
-    icon: 'Settings',
-    gradient: 'from-yellow-500 to-orange-600',
-  },
+  id: '2',
+  slug: 'electrobombas',
+  title: 'Reparación y Venta de Electrobombas',
+  shortDescription:
+    'Venta, reparación y mantenimiento de electrobombas sumergibles en Mendoza y San Juan. Atendemos toda marca y potencia con garantía escrita y prueba en banco.',
+  fullDescription:
+    'Somos referentes en venta y reparación integral de electrobombas sumergibles en Mendoza, San Juan y todo el país. Comercializamos equipos de las principales marcas del mercado —Grundfos, Pedrollo, Siemens y más— para uso doméstico, agrícola e industrial. Nuestro taller cuenta con equipamiento técnico de alta precisión para el diagnóstico, desmontaje, bobinado, armado y prueba de electrobombas de cualquier marca y potencia. Realizamos bobinado profesional, sustitución de rodamientos, sellos mecánicos y todo tipo de componentes internos, garantizando el rendimiento óptimo del equipo.',
+  features: [
+    'Venta de electrobombas nuevas con garantía',
+    'Bobinados profesionales de alta calidad',
+    'Reparación completa garantizada',
+    'Toda marca y potencia',
+    'Prueba en banco antes de entrega',
+    'Asesoramiento técnico sin cargo',
+  ],
+  details: [
+    'Venta de electrobombas sumergibles y de superficie',
+    'Equipos para uso doméstico, agrícola e industrial',
+    'Diagnóstico eléctrico y mecánico completo',
+    'Bobinado de estátores y rotores',
+    'Sustitución de rodamientos y sellos',
+    'Prueba de aislación y rendimiento',
+    'Reparación de motores monofásicos y trifásicos',
+    'Potencias desde 0.5 HP hasta 200 HP',
+    'Despacho a todo el país',
+  ],
+  image: '/assets/reparacion-electrobombas.jpg',
+  images: [bomba1],
+  imageDetail: bomba1,
+  icon: 'Settings',
+  gradient: 'from-yellow-500 to-orange-600',
+},
   {
     id: '3',
     slug: 'bobinados',
@@ -116,6 +124,7 @@ export const SERVICES: Service[] = [
     ],
     images: [bobinado1],
     image: '/assets/reparacion-electrobombas.jpg',
+    imageDetail: perfo2,
     icon: 'Zap',
     gradient: 'from-purple-500 to-indigo-600',
   },
@@ -143,6 +152,7 @@ export const SERVICES: Service[] = [
     ],
     images: [filmacion1, filmacion1],
     image: '/assets/filmaciones.jpg',
+    imageDetail: perfo2,
     icon: 'Video',
     gradient: 'from-indigo-500 to-purple-600',
   },
@@ -170,6 +180,7 @@ export const SERVICES: Service[] = [
     ],
     images: [agua],
     image: '/assets/limpieza1.jpg',
+    imageDetail: perfo2,
     icon: 'Sparkles',
     gradient: 'from-green-500 to-teal-600',
   },
@@ -197,6 +208,7 @@ export const SERVICES: Service[] = [
     ],
     images: [pesca5],
     image: '/assets/surgente.jpg',
+    imageDetail: perfo2,
     icon: 'Anchor',
     gradient: 'from-cyan-500 to-blue-600',
   },
@@ -224,6 +236,7 @@ export const SERVICES: Service[] = [
     ],
     images: [estudio2],
     image: '/assets/estudios-geologicos.jpg',
+    imageDetail: perfo2,
     icon: 'Mountain',
     gradient: 'from-teal-500 to-cyan-600',
   },
@@ -251,6 +264,7 @@ export const SERVICES: Service[] = [
     ],
     images: [mantenimiento1],
     image: '/assets/mantenimiento.jpg',
+    imageDetail: perfo2,
     icon: 'Wrench',
     gradient: 'from-blue-500 to-purple-600',
   },

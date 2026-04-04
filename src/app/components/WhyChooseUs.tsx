@@ -105,12 +105,12 @@ export default function WhyChooseUs() {
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
-            Experiencia, tecnología y compromiso para garantizar tu acceso al agua
+            Experiencia, tecnología y compromiso para garantizar tu acceso al agua.
           </p>
 
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Brindamos servicios profesionales de{' '}
-            <strong>perforación de pozos de agua en Mendoza y San Juan</strong>, incluyendo
+            <strong>perforación de pozos de agua en Mendoza, San Juan, San Luis, Noroeste, Noreste, Region Pampeana y Patagonia</strong>, incluyendo
             bobinados, filmaciones, limpieza de perforaciones, venta de bombas y asesoramiento
             técnico. Trabajamos con clientes{' '}
             <strong>rurales, residenciales e industriales en toda la región</strong>.
