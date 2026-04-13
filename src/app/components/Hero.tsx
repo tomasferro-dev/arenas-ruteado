@@ -84,7 +84,7 @@ export default function Hero() {
              px-4 py-1.5 rounded-full mb-4 mt-6"
           >
             <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
-            Base en Mendoza · Servicio en todo el país · Más de 20 años de experiencia
+            Base en Mendoza · Servicio en todo el país
           </motion.div>
 
           {/* Título — H1 principal con keywords nacionales + locales */}

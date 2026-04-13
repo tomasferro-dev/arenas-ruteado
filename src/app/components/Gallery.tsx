@@ -58,10 +58,10 @@ export default function Gallery({ preview = false }: GalleryProps) {
                 <h3 className="font-semibold text-gray-900 text-sm mb-1 leading-snug group-hover:text-red-700 transition-colors">
                   {project.title}
                 </h3>
-                {project.location && (
+                {project.ubicacion && (
                   <div className="flex items-center gap-1 text-xs text-gray-500">
                     <MapPin className="w-3 h-3" />
-                    {project.location}
+                    {project.ubicacion}
                   </div>
                 )}
               </div>
