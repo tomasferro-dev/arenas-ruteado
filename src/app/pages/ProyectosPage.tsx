@@ -140,13 +140,13 @@ export default function ProyectosPage() {
                 </h3>
 
                 <p className="text-gray-600 text-xs line-clamp-2 mb-2">
-                  {project.description}
+                  {project.descripcion}
                 </p>
 
-                {project.location && (
+                {project.ubicacion && (
                   <div className="flex items-center gap-1 text-xs text-gray-400">
                     <MapPin className="w-3 h-3" />
-                    {project.location}
+                    {project.ubicacion}
                   </div>
                 )}
               </div>
