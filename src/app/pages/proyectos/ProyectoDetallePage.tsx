@@ -42,10 +42,10 @@ export default function ProyectoDetallePage() {
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-semibold mt-4 mb-3">{project.title}</h1>
-          {project.location && (
+          {project.ubicacion && (
             <div className="flex items-center gap-2 text-gray-300 text-sm">
               <MapPin className="w-4 h-4" />
-              {project.location}
+              {project.ubicacion}
             </div>
           )}
         </div>
@@ -58,7 +58,7 @@ export default function ProyectoDetallePage() {
           <div className="lg:col-span-2 space-y-8">
             <div>
               <h2 className="text-xl font-semibold text-gray-900 mb-3">Descripción del Proyecto</h2>
-              <p className="text-gray-600 leading-relaxed">{project.description}</p>
+              <p className="text-gray-600 leading-relaxed">{project.descripcion}</p>
             </div>
 
             {/* Image grid */}
@@ -124,10 +124,10 @@ export default function ProyectoDetallePage() {
                   <dt className="text-gray-500 w-24 flex-shrink-0">Categoría</dt>
                   <dd className="text-gray-900 font-medium">{project.category}</dd>
                 </div>
-                {project.location && (
+                {project.ubicacion && (
                   <div className="flex gap-2">
                     <dt className="text-gray-500 w-24 flex-shrink-0">Ubicación</dt>
-                    <dd className="text-gray-900 font-medium">{project.location}</dd>
+                    <dd className="text-gray-900 font-medium">{project.ubicacion}</dd>
                   </div>
                 )}
               </dl>
@@ -153,10 +153,10 @@ export default function ProyectoDetallePage() {
                     <h3 className="font-semibold text-gray-900 text-sm group-hover:text-red-700 transition-colors line-clamp-2">
                       {p.title}
                     </h3>
-                    {p.location && (
+                    {p.ubicacion && (
                       <div className="flex items-center gap-1 text-xs text-gray-400 mt-1">
                         <MapPin className="w-3 h-3" />
-                        {p.location}
+                        {p.ubicacion}
                       </div>
                     )}
                   </div>
