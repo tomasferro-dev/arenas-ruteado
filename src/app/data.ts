@@ -596,6 +596,6 @@ export const CONTACT = {
   },
   linkedin: 'https://linkedin.com/in/sergio-antonio-arenas-85ba7b96',
   whatsappNumber: '5492614707318',
-  zones: ['Mendoza', 'San Juan'],
+  zones: ["Mendoza", "San Juan", "San Luis", "Buenos Aires", "Patagonia", "La Pampa", "Norte Argentino"],
   mapEmbedUrl: 'https://maps.app.goo.gl/ibTBbgPVCskm1RDg9',
 };

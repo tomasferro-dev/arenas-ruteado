@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, MapPin, Clock, Mail, Linkedin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { CONTACT } from "../data";
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png";
 
 interface ContactProps {
   compact?: boolean; // true = versión /home
@@ -38,7 +38,7 @@ export default function Contact({ compact = false }: ContactProps) {
     <section
       id="contacto"
       className={compact ? "py-16 bg-white" : "py-20 bg-white"}
-    > 
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl mb-4 text-gray-900">Contáctenos</h2>
@@ -69,10 +69,9 @@ export default function Contact({ compact = false }: ContactProps) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
           {/* Form */}
           {/* <div className="bg-gray-50 rounded-xl p-8"> */}
-            <div className="bg-gray-50 rounded-xl p-8 flex flex-col h-full">
+          <div className="bg-gray-50 rounded-xl p-8 flex flex-col h-full">
             <h3 className="text-2xl mb-6 text-gray-900">
               Solicitar Presupuesto
             </h3>
@@ -189,16 +188,15 @@ export default function Contact({ compact = false }: ContactProps) {
                 Enviar Consulta por WhatsApp
               </button>
             </form>
-             {/* Logo centrado */}
-    {/* <div className="mt-6 flex justify-center"> */}
-      <div className="mt-auto pt-6 flex justify-center ">
-      <img
-        src={logo}
-        alt="Arenas Perforaciones"
-        className="h-30 object-contain"
-      />
-    </div>
-
+            {/* Logo centrado */}
+            {/* <div className="mt-6 flex justify-center"> */}
+            <div className="mt-auto pt-6 flex justify-center ">
+              <img
+                src={logo}
+                alt="Arenas Perforaciones"
+                className="h-30 object-contain"
+              />
+            </div>
           </div>
 
           {/* Info */}
@@ -302,24 +300,25 @@ export default function Contact({ compact = false }: ContactProps) {
 
               <div className="mt-8 pt-8 border-t border-white/20">
                 <h4 className="font-medium mb-3">Zonas de Cobertura</h4>
-                <div className="flex gap-4 text-sm text-white/90">
+                <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/90">
                   {CONTACT.zones.map((z) => (
-                    <span key={z}>• {z}</span>
+                    <span key={z} className="w-[45%]">
+                      • {z}
+                    </span>
                   ))}
                 </div>
               </div>
             </div>
 
             {/* Map centrado */}
-    <div className="w-full flex justify-center">
-      {/* <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.8973410149188!2d-68.78749332469738!3d-32.933209973598814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0dbd66118a83%3A0x59d077127fd80065!2sARENAS%20PERFORACIONES!5e1!3m2!1ses-419!2sar!4v1775090719717!5m2!1ses-419!2sar"
-        className="w-full max-w-xl h-80 rounded-xl shadow-md border-0"
-        loading="lazy"
-      ></iframe> */}
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5631.785296050919!2d-68.79517251198378!3d-32.93306316151412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0d6058c59e1f%3A0x7ec900e164996530!2sARENAS%20ELECTROBOMBAS!5e0!3m2!1ses-419!2sar!4v1775522896233!5m2!1ses-419!2sar" width="600" height="450"  loading="lazy"></iframe>
-    </div>
-
+            <div className="w-full flex justify-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.67418455372!2d-68.78749332580232!3d-32.93320547120726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0dbd66118a83%3A0x59d077127fd80065!2sARENAS%20PERFORACIONES!5e0!3m2!1ses-419!2sar!4v1776289035924!5m2!1ses-419!2sar"
+                width="600"
+                height="450"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
