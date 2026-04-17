@@ -56,10 +56,10 @@ export default function ProyectoDetallePage() {
 
           {/* Gallery + description */}
           <div className="lg:col-span-2 space-y-8">
-            <div>
+            {/* <div>
               <h2 className="text-xl font-semibold text-gray-900 mb-3">Descripción del Proyecto</h2>
               <p className="text-gray-600 leading-relaxed">{project.descripcion}</p>
-            </div>
+            </div> */}
 
             {/* Image grid */}
             {images.length > 0 ? (
@@ -147,7 +147,8 @@ export default function ProyectoDetallePage() {
                   className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all"
                 >
                   <div className="aspect-video bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
-                    <span className="text-white/30 text-xs">Sin imagen</span>
+                    {/* <span className="text-white/30 text-xs">Sin imagen</span> */}
+                    <img src={p.images[0]} alt={p.title} />
                   </div>
                   <div className="p-4">
                     <h3 className="font-semibold text-gray-900 text-sm group-hover:text-red-700 transition-colors line-clamp-2">

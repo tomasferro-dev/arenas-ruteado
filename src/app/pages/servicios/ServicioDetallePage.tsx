@@ -12,10 +12,13 @@ import {
   ArrowLeft,
   Phone,
   CheckCircle2,
+  Cog,
+  ArrowRight,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { SERVICES, CONTACT } from "../../data";
 import Breadcrumb from "../../components/Breadcrumb";
+import VentaProductos from "../../components/ProductCard";
 
 const ICON_MAP: Record<string, React.ElementType> = {
   Droplet,
@@ -85,13 +88,29 @@ export default function ServicioDetallePage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-10">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                Descripción del Servicio
-              </h2>
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-2xl font-semibold text-gray-900">
+                  Descripción del Servicio
+                </h2>
+
+                {slug === "reparacion" && (
+                  <Link
+                    to="/reparacion"
+                    className="inline-flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-lg font-medium transition-colors text-base"
+                  >
+                    <Cog className="w-5 h-5" />
+                    Cómo Trabajamos
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                )}
+              </div>
               <p className="text-gray-600 leading-relaxed text-lg">
                 {service.fullDescription}
               </p>
             </div>
+            {(slug === "venta" || slug === "alquiler") && (
+              <VentaProductos variant={slug === "alquiler" ? "alquiler" : "venta"} />
+            )}
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 mb-6">
                 ¿Qué incluye?

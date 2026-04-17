@@ -19,6 +19,9 @@ import ServicioDetallePage from './pages/servicios/ServicioDetallePage';
 // Pages — nivel 2 (proyectos individuales)
 import ProyectoDetallePage from './pages/proyectos/ProyectoDetallePage';
 
+// Página dedicada "Cómo Trabajamos" de Reparación
+import ReparacionPage from './pages/ReparacionPage';
+
 // Scroll to top on navigation
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,6 +57,9 @@ export default function App() {
 
           {/* Segundo nivel — proyecto individual */}
           <Route path="/proyectos/:id" element={<ProyectoDetallePage />} />
+
+          {/* Página "Cómo Trabajamos" de Reparación */}
+          <Route path="/reparacion" element={<ReparacionPage />} />
         </Route>
 
         {/* 404 fallback */}

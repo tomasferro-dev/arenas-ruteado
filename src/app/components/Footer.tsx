@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Linkedin } from 'lucide-react';
 import { CONTACT } from '../data';
 // import Logo from '../../../assets/arenas_perforaciones_sin_fondo.png';
+import logo from "../../assets/logo-blanco.png";
 
 export default function Footer() {
   return (
@@ -13,8 +14,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="flex flex-col leading-tight">
-                <span className="text-xl font-bold text-red-400 tracking-tight">ARENAS</span>
-                <span className="text-xs text-gray-400 tracking-widest uppercase">Perforaciones</span>
+                {/* <span className="text-xl font-bold text-red-400 tracking-tight">ARENAS</span>
+                <span className="text-xs text-gray-400 tracking-widest uppercase">Perforaciones</span> */}
+                <img src={logo} alt='Arenas Perforaciones Logo' className="max-w-[80%] h-auto" />
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

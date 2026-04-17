@@ -22,6 +22,13 @@ export default function Header({ mode }: HeaderProps) {
   // const navigate = useNavigate();
   const location = useLocation();
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    if (location.pathname === "/" || location.pathname === "/home") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
@@ -47,7 +54,7 @@ export default function Header({ mode }: HeaderProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
-          <Link to="/home" className="flex items-center">
+          <Link to="/home" onClick={handleLogoClick} className="flex items-center">
             {/* Use img tag with your logo */}
             <img
               src={logo}

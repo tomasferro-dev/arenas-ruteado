@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import HeroImage1 from '../../assets/hero3.jpg';
-import HeroImage2 from '../../assets/hero4.jpeg';
-import HeroImage3 from '../../assets/hero5.jpg';
-import HeroImage4 from '../../assets/hero6.jpg';
+import HeroImage2 from '../../assets/perforaciones/25-de-mayo/1.jpg';
+// import HeroImage3 from '../../assets/3.jpg';
+import HeroImage4 from '../../assets/perforaciones/bianchetti/6.jpg';
+import HeroImage3 from '../../assets/perforaciones/blanco/c2.jpg';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -18,7 +19,7 @@ export default function Hero() {
     }
   };
 
-  const images = [HeroImage1, HeroImage2, HeroImage3, HeroImage4];
+  const images = [HeroImage1, HeroImage2, HeroImage3,HeroImage4];
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {

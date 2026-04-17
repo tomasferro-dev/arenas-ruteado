@@ -90,6 +90,8 @@ import n1 from '../assets/perforaciones/luigi-bosca/n1.png';
 import n2 from '../assets/perforaciones/luigi-bosca/n2.png';
 import n3 from '../assets/perforaciones/luigi-bosca/n3.png';
 import n4 from '../assets/perforaciones/luigi-bosca/n4.png';
+import watermotBanner from "../assets/watermot-banner.jpg";
+
 
 export interface Service {
   id: string;
@@ -269,6 +271,39 @@ export const SERVICES: Service[] = [
     image: venta4,
     images: [venta4],
     imageDetail: venta55,
+    icon: "Settings",
+    gradient: "from-yellow-500 to-orange-600",
+  },
+  {
+    id: "12",
+    slug: "alquiler",
+    slug2: "alquiler",
+    title: "Alquiler de Electrobombas",
+    shortDescription:
+      "Alquiler de electrobombas sumergibles y de superficie en Mendoza, San Juan y resto de Argentina. Solución temporal para garantizar la continuidad del servicio de agua mientras reparamos tu equipo o por proyectos puntuales.",
+    fullDescription:
+      "Ofrecemos un servicio de alquiler de electrobombas pensado para brindar continuidad operativa a productores agrícolas, industrias, municipios y hogares. Es la solución ideal cuando tu equipo se encuentra en reparación, para cubrir períodos de alta demanda o para proyectos con necesidades temporales de bombeo. Disponemos de electrobombas de diferentes potencias y características, todas en óptimas condiciones de funcionamiento y con asesoramiento técnico incluido. Consultanos por la disponibilidad y el modelo que mejor se adapte a tu proyecto a través de nuestro formulario de contacto o WhatsApp.",
+    features: [
+      "Equipos en óptimas condiciones de funcionamiento",
+      "Solución inmediata ante rotura o mantenimiento del equipo propio",
+      "Diferentes potencias y caudales disponibles",
+      "Asesoramiento técnico incluido",
+      "Contratos flexibles adaptados a cada proyecto",
+      "Cobertura en Mendoza, San Juan y resto de Argentina",
+    ],
+    details: [
+      "Electrobombas sumergibles y de superficie",
+      "Equipos monofásicos y trifásicos",
+      "Uso doméstico, agrícola, industrial y municipal",
+      "Alquileres por días, semanas o meses",
+      "Entrega y retiro coordinado",
+      "Instalación y puesta en marcha opcional",
+      "Asistencia técnica durante el período de alquiler",
+      "Presupuesto a medida según el proyecto",
+    ],
+    image: watermotBanner,
+    images: [watermotBanner],
+    imageDetail: watermotBanner,
     icon: "Settings",
     gradient: "from-yellow-500 to-orange-600",
   },
