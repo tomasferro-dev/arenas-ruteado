@@ -1,5 +1,6 @@
 import ProjectsCarousel from "../../layouts/ProjectsCarousel";
 import { useParams, Link, Navigate } from "react-router-dom";
+import SEO from "../../components/SEO";
 import {
   Droplet,
   Wrench,
@@ -47,6 +48,23 @@ export default function ServicioDetallePage() {
 
   return (
     <>
+      <SEO
+        title={service.title}
+        description={service.shortDescription}
+        canonical={`/servicios/${service.slug}`}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: service.title,
+          description: service.fullDescription,
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Arenas Perforaciones',
+            url: 'https://arenasperforaciones.com.ar',
+          },
+          areaServed: ['Mendoza', 'San Juan', 'Argentina'],
+        }}
+      />
       <Breadcrumb label={service.title} />
 
       {/* Hero banner */}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arenasperforaciones.com.ar/sitemap.xml

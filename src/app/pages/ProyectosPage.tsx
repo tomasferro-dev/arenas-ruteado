@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MapPin, Filter } from 'lucide-react';
 import { PROJECTS } from '../data';
 import Breadcrumb from '../components/Breadcrumb';
+import SEO from '../components/SEO';
 
 // 👇 IMPORTÁ TUS IMÁGENES (igual que en servicios)
 import Bg1 from '../../assets/proy11.jpg';
@@ -50,7 +51,11 @@ export default function ProyectosPage() {
 
   return (
     <>
-    
+      <SEO
+        title="Proyectos de Perforación de Pozos en Mendoza y San Juan"
+        description="Conocé nuestros proyectos de perforación de pozos de agua en Mendoza, San Juan y Argentina. Fincos agrícolas, establecimientos industriales y organismos municipales."
+        canonical="/proyectos"
+      />
       <Breadcrumb />
 
       {/* HERO con carrusel */}

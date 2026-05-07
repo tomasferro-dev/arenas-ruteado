@@ -3,6 +3,7 @@ import { Cog, CheckCircle2, Phone, Wrench, Zap, Settings, ChevronDown } from 'lu
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 import Contact from '../components/Contact';
+import SEO from '../components/SEO';
 import Breadcrumb from '../components/Breadcrumb';
 import { CONTACT } from '../data';
 
@@ -59,6 +60,11 @@ export default function ReparacionPage() {
 
   return (
     <>
+      <SEO
+        title="Reparación de Electrobombas en Mendoza y San Juan"
+        description="Servicio técnico especializado en reparación de electrobombas sumergibles y de superficie. Diagnóstico, bobinado, repuestos originales y prueba en banco. Mendoza y San Juan."
+        canonical="/reparacion"
+      />
       <Breadcrumb label="Reparación de Electrobombas" />
 
       {/* ── HERO ──────────────────────────────────────────────── */}

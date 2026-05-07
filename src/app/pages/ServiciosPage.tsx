@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Services from '../components/Services';
 import Breadcrumb from '../components/Breadcrumb';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { FaWhatsapp } from 'react-icons/fa';
 import { CONTACT } from '../data';
 
@@ -31,6 +32,11 @@ export default function ServiciosPage() {
   return (
     <>
     
+      <SEO
+        title="Servicios de Perforación de Pozos y Electrobombas"
+        description="Perforación de pozos hasta 1000m, limpieza, desarrollo, mantenimiento, venta y reparación de electrobombas. Cobertura en Mendoza, San Juan y resto de Argentina."
+        canonical="/servicios"
+      />
       <Breadcrumb />
 
       {/* HERO con carrusel */}

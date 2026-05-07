@@ -4,6 +4,7 @@ import { ArrowLeft, MapPin, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { PROJECTS, CONTACT } from '../../data';
 import Breadcrumb from '../../components/Breadcrumb';
+import SEO from '../../components/SEO';
 
 export default function ProyectoDetallePage() {
   const { id } = useParams<{ id: string }>();
@@ -24,6 +25,11 @@ export default function ProyectoDetallePage() {
 
   return (
     <>
+      <SEO
+        title={project.title}
+        description={`Proyecto de perforación de pozo: ${project.title}${project.ubicacion ? ` en ${project.ubicacion}` : ''}${project.profundidad ? `. Profundidad: ${project.profundidad}` : ''}. Arenas Perforaciones, Mendoza y San Juan.`}
+        canonical={`/proyectos/${project.id}`}
+      />
       <Breadcrumb label={project.title} />
 
       {/* Header */}

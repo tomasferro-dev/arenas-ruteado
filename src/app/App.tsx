@@ -36,12 +36,10 @@ export default function App() {
     <>
       <ScrollToTop />
       <Routes>
-        {/* Redirigir raíz → /home */}
-        <Route path="/" element={<Navigate to="/home" replace />} />
-
         {/* Layout principal con hero completo */}
         <Route element={<RootLayout />}>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
         </Route>
 
         {/* Layout de subpáginas con nav y breadcrumb */}
@@ -63,7 +61,7 @@ export default function App() {
         </Route>
 
         {/* 404 fallback */}
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );

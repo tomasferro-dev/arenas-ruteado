@@ -1,10 +1,16 @@
 import WhyChooseUs from '../components/WhyChooseUs';
 import Breadcrumb from '../components/Breadcrumb';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function NosotrosPage() {
   return (
     <>
+      <SEO
+        title="Nosotros"
+        description="Conocé a Arenas Perforaciones: más de 20 años perforando pozos de agua en Mendoza y San Juan. Equipo técnico especializado, equipos de última generación y garantía escrita."
+        canonical="/nosotros"
+      />
       <Breadcrumb />
 
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-14 px-4">
