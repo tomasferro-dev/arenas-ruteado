@@ -62,7 +62,7 @@ export default function ServicioDetallePage() {
             name: 'Arenas Perforaciones',
             url: 'https://arenasperforaciones.com.ar',
           },
-          areaServed: ['Mendoza', 'San Juan', 'Argentina'],
+          areaServed: ['Argentina'],
         }}
       />
       <Breadcrumb label={service.title} />

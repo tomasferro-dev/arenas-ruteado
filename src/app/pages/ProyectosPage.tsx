@@ -52,8 +52,8 @@ export default function ProyectosPage() {
   return (
     <>
       <SEO
-        title="Proyectos de Perforación de Pozos en Mendoza y San Juan"
-        description="Conocé nuestros proyectos de perforación de pozos de agua en Mendoza, San Juan y Argentina. Fincos agrícolas, establecimientos industriales y organismos municipales."
+        title="Proyectos de Perforación de Pozos en Toda Argentina"
+        description="Conocé nuestros proyectos de perforación de pozos de agua en toda Argentina. Fincas agrícolas, establecimientos industriales y organismos municipales."
         canonical="/proyectos"
       />
       <Breadcrumb />
@@ -84,7 +84,7 @@ export default function ProyectosPage() {
           </h1>
 
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Conocé nuestros trabajos realizados en Mendoza y San Juan a lo largo de más de 20 años
+            Conocé nuestros trabajos realizados en Mendoza, San Juan y otras provincias a lo largo de más de 20 años
           </p>
         </div>
       </div>

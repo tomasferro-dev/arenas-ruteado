@@ -7,7 +7,7 @@ export default function ContactoPage() {
     <>
       <SEO
         title="Contacto"
-        description="Contactá a Arenas Perforaciones en Mendoza y San Juan. Teléfono, WhatsApp y formulario de contacto. Atención Lun–Vie 8–17hs y Sáb 8–12hs."
+        description="Contactá a Arenas Perforaciones. Atendemos en toda Argentina. Teléfono, WhatsApp y formulario de contacto. Atención Lun–Vie 8–17hs y Sáb 8–12hs."
         canonical="/contacto"
       />
       <Breadcrumb />

@@ -27,7 +27,7 @@ export default function ProyectoDetallePage() {
     <>
       <SEO
         title={project.title}
-        description={`Proyecto de perforación de pozo: ${project.title}${project.ubicacion ? ` en ${project.ubicacion}` : ''}${project.profundidad ? `. Profundidad: ${project.profundidad}` : ''}. Arenas Perforaciones, Mendoza y San Juan.`}
+        description={`Proyecto de perforación de pozo: ${project.title}${project.ubicacion ? ` en ${project.ubicacion}` : ''}${project.profundidad ? `. Profundidad: ${project.profundidad}` : ''}. Arenas Perforaciones, toda Argentina.`}
         canonical={`/proyectos/${project.id}`}
       />
       <Breadcrumb label={project.title} />

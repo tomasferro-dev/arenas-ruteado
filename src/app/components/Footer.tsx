@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Más de 20 años brindando soluciones integrales en perforación y mantenimiento de pozos de agua en Mendoza y San Juan.
+              Más de 20 años brindando soluciones integrales en perforación y mantenimiento de pozos de agua en toda Argentina.
             </p>
           </div>
 

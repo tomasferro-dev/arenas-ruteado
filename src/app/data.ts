@@ -130,12 +130,12 @@ export const SERVICES: Service[] = [
     slug2: "",
     title: "Perforaciones de Pozos",
     shortDescription:
-      "Realizamos perforaciones de pozos de agua en Mendoza y San Juan para uso doméstico, agrícola e industrial, con estudios geológicos previos para garantizar resultados óptimos.",
+      "Realizamos perforaciones de pozos de agua en toda Argentina para uso doméstico, agrícola e industrial, con estudios geológicos previos para garantizar resultados óptimos.",
     fullDescription:
-      "Nuestro servicio de perforación de pozos es el más completo de la región. Contamos con equipos de perforación de última generación capaces de alcanzar hasta 1000 metros de profundidad, operados por personal altamente calificado. Cada proyecto comienza con un estudio geológico e hidrogeológico del terreno para determinar la mejor ubicación, profundidad y método de perforación. Trabajamos en proyectos rurales, residenciales, industriales y municipales en toda la provincia de Mendoza y San Juan.",
+      "Nuestro servicio de perforación de pozos cubre todo el país. Contamos con equipos de perforación capaces de alcanzar hasta 1000 metros de profundidad, operados por personal altamente calificado. Cada proyecto comienza con un estudio geológico e hidrogeológico del terreno para determinar la mejor ubicación, profundidad y método de perforación. Trabajamos en proyectos rurales, residenciales, industriales y municipales en toda Argentina, con base en Mendoza.",
     features: [
       "Hasta 1000 metros de profundidad",
-      "Equipos de última generación",
+      "Perforadoras de hasta 1000 m",
       "Garantía de calidad escrita",
       "Estudio geológico previo incluido",
     ],
@@ -145,7 +145,7 @@ export const SERVICES: Service[] = [
       "Cementación y sello sanitario",
       "Informe técnico y registro de perforación",
       "Aforo y prueba de bombeo",
-      "Cobertura en Mendoza y San Juan",
+      "Cobertura en toda Argentina",
     ],
     image: perfo2,
     images: [perfo2, agua],
@@ -248,7 +248,7 @@ export const SERVICES: Service[] = [
     slug2: "venta",
     title: "Venta de Electrobombas",
     shortDescription:
-      "Comercialización de electrobombas en Mendoza, San Juan y resto de Argentina para uso doméstico, agrícola e industrial, con asesoramiento técnico para elegir el equipo adecuado.",
+      "Comercialización de electrobombas en toda Argentina para uso doméstico, agrícola e industrial, con asesoramiento técnico para elegir el equipo adecuado.",
     fullDescription:
       "Ofrecemos venta especializada de electrobombas sumergibles y de superficie de primeras marcas para múltiples aplicaciones. Asesoramos a cada cliente según caudal requerido, profundidad, tipo de uso y características del terreno. Trabajamos con equipos confiables y eficientes, garantizando durabilidad y rendimiento óptimo en instalaciones domiciliarias, agrícolas e industriales.",
     features: [
@@ -266,7 +266,7 @@ export const SERVICES: Service[] = [
       "Potencias desde 0.2 HP hasta 300 HP",
       "Opciones para pozos, cisternas y riego",
       "Accesorios y repuestos originales",
-      "Cobertura en Mendoza, San Juan y resto de Argentina",
+      "Cobertura en toda Argentina",
     ],
     image: venta4,
     images: [venta4],
@@ -280,7 +280,7 @@ export const SERVICES: Service[] = [
     slug2: "alquiler",
     title: "Alquiler de Electrobombas",
     shortDescription:
-      "Alquiler de electrobombas sumergibles y de superficie en Mendoza, San Juan y resto de Argentina. Solución temporal para garantizar la continuidad del servicio de agua mientras reparamos tu equipo o por proyectos puntuales.",
+      "Alquiler de electrobombas sumergibles y de superficie en toda Argentina. Solución temporal para garantizar la continuidad del servicio de agua mientras reparamos tu equipo o por proyectos puntuales.",
     fullDescription:
       "Ofrecemos un servicio de alquiler de electrobombas pensado para brindar continuidad operativa a productores agrícolas, industrias, municipios y hogares. Es la solución ideal cuando tu equipo se encuentra en reparación, para cubrir períodos de alta demanda o para proyectos con necesidades temporales de bombeo. Disponemos de electrobombas de diferentes potencias y características, todas en óptimas condiciones de funcionamiento y con asesoramiento técnico incluido. Consultanos por la disponibilidad y el modelo que mejor se adapte a tu proyecto a través de nuestro formulario de contacto o WhatsApp.",
     features: [
@@ -289,7 +289,7 @@ export const SERVICES: Service[] = [
       "Diferentes potencias y caudales disponibles",
       "Asesoramiento técnico incluido",
       "Contratos flexibles adaptados a cada proyecto",
-      "Cobertura en Mendoza, San Juan y resto de Argentina",
+      "Cobertura en toda Argentina",
     ],
     details: [
       "Electrobombas sumergibles y de superficie",
@@ -313,7 +313,7 @@ export const SERVICES: Service[] = [
     slug2: "reparacion",
     title: "Reparación de Electrobombas",
     shortDescription:
-      "Servicio técnico especializado en reparación de electrobombas en Mendoza, San Juan y resto de Argentina, con diagnóstico preciso, repuestos de calidad y prueba en banco.",
+      "Servicio técnico especializado en reparación de electrobombas en toda Argentina, con diagnóstico preciso, repuestos de calidad y prueba en banco.",
     fullDescription:
       "Brindamos un servicio integral de reparación de electrobombas sumergibles y de superficie. Realizamos diagnóstico eléctrico y mecánico completo, desmontaje, bobinado, reemplazo de componentes y armado bajo estándares técnicos exigentes. Cada equipo es sometido a pruebas de funcionamiento para asegurar su rendimiento antes de la entrega.",
     features: [
@@ -395,7 +395,7 @@ export const SERVICES: Service[] = [
       "Verificación de funcionamiento",
       "Instalación de sistemas de sujeción",
       "Control eléctrico básico en sitio",
-      "Cobertura en Mendoza y San Juan",
+      "Cobertura en toda Argentina",
     ],
     images: [extrac1],
     image: extrac1,

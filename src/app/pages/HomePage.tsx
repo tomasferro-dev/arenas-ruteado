@@ -10,7 +10,7 @@ const localBusinessJsonLd = {
   '@type': 'LocalBusiness',
   name: 'Arenas Perforaciones',
   description:
-    'Empresa especializada en perforación de pozos de agua en Mendoza y San Juan. Más de 20 años de experiencia. Servicios de electrobombas, bobinados, filmaciones y más.',
+    'Empresa especializada en perforación de pozos de agua en toda Argentina. Más de 20 años de experiencia. Servicios de electrobombas, bobinados, filmaciones y más.',
   url: 'https://arenasperforaciones.com.ar',
   telephone: '+5402614707318',
   email: 'arenasbombas@hotmail.com',
@@ -36,7 +36,7 @@ const localBusinessJsonLd = {
       closes: '12:00',
     },
   ],
-  areaServed: ['Mendoza', 'San Juan', 'San Luis', 'Buenos Aires', 'Patagonia', 'La Pampa'],
+  areaServed: ['Argentina'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Servicios de Perforación de Pozos y Electrobombas',
@@ -55,8 +55,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Perforación de Pozos de Agua en Mendoza y San Juan"
-        description="Arenas Perforaciones: perforación de pozos de agua hasta 1000m, venta y reparación de electrobombas, estudios geológicos, filmaciones y más. +20 años de experiencia en Mendoza y San Juan."
+        title="Perforación de Pozos de Agua en Toda Argentina"
+        description="Arenas Perforaciones: perforación de pozos de agua hasta 1000m, venta y reparación de electrobombas, estudios geológicos, filmaciones y más. +20 años de experiencia en toda Argentina."
         canonical="/"
         jsonLd={localBusinessJsonLd}
       />

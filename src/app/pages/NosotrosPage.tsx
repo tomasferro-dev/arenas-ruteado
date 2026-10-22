@@ -8,7 +8,7 @@ export default function NosotrosPage() {
     <>
       <SEO
         title="Nosotros"
-        description="Conocé a Arenas Perforaciones: más de 20 años perforando pozos de agua en Mendoza y San Juan. Equipo técnico especializado, equipos de última generación y garantía escrita."
+        description="Conocé a Arenas Perforaciones: más de 20 años perforando pozos de agua en toda Argentina. Perforación hasta 1000 m, filmación HD y garantía escrita."
         canonical="/nosotros"
       />
       <Breadcrumb />
@@ -17,7 +17,7 @@ export default function NosotrosPage() {
         <div className="container mx-auto sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-semibold mb-4">Nosotros</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Más de 20 años de experiencia en perforación de pozos de agua en Mendoza y San Juan
+            Más de 20 años de experiencia en perforación de pozos de agua en toda Argentina
           </p>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function NosotrosPage() {
             <p>
               Arenas Perforaciones nació en la provincia de Mendoza con la misión de brindar soluciones
               integrales de acceso al agua para familias, productores agropecuarios e industrias de toda
-              la región cuyana.
+              Argentina.
             </p>
             <p>
               A lo largo de más de dos décadas, hemos ejecutado proyectos de toda envergadura: desde
@@ -40,7 +40,7 @@ export default function NosotrosPage() {
               agrícolas, municipalidades y clubes deportivos.
             </p>
             <p>
-              Nuestro equipo de técnicos y geólogos trabaja con equipos de última generación,
+              Nuestro equipo de técnicos y geólogos trabaja con perforadoras de hasta 1000 m y cámara HD de 500 m,
               garantizando en cada trabajo la máxima calidad, seguridad y eficiencia. Cada proyecto
               incluye documentación técnica completa y garantía escrita.
             </p>

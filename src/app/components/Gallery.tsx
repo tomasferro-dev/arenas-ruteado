@@ -23,7 +23,7 @@ export default function Gallery({ preview = false }: GalleryProps) {
         <div className="text-center mb-16">
           <h2 className="text-4xl text-gray-900 mb-4">Galería de Proyectos</h2>
           <p className="text-gray-600 text-xl max-w-3xl mx-auto">
-            Conocé algunos de nuestros trabajos realizados en Mendoza y San Juan
+            Conocé algunos de nuestros trabajos realizados en Mendoza, San Juan y otras provincias
           </p>
         </div>
 

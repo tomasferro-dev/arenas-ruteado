@@ -34,7 +34,7 @@ export default function ServiciosPage() {
     
       <SEO
         title="Servicios de Perforación de Pozos y Electrobombas"
-        description="Perforación de pozos hasta 1000m, limpieza, desarrollo, mantenimiento, venta y reparación de electrobombas. Cobertura en Mendoza, San Juan y resto de Argentina."
+        description="Perforación de pozos hasta 1000m, limpieza, desarrollo, mantenimiento, venta y reparación de electrobombas. Cobertura en toda Argentina."
         canonical="/servicios"
       />
       <Breadcrumb />
@@ -67,7 +67,7 @@ export default function ServiciosPage() {
           </h1>
 
           <p className="text-xl text-gray-200 max-w-2xl mx-auto mb-8">
-            Soluciones integrales en perforación y mantenimiento de pozos de agua en Mendoza y San Juan
+            Soluciones integrales en perforación y mantenimiento de pozos de agua en toda Argentina
           </p>
 
           <a

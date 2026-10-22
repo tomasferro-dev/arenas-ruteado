@@ -11,9 +11,9 @@ const reasons = [
   },
   {
     icon: Cog,
-    title: 'Equipos de Última Generación',
+    title: 'Perforación hasta 1000 Metros',
     description:
-      'Contamos con maquinaria moderna y tecnología de punta para realizar trabajos eficientes, rápidos y de máxima calidad.',
+      'Perforamos hasta 1000 metros y filmamos pozos con cámara HD hasta 500 metros, con informe técnico en cada trabajo.',
     color: 'bg-indigo-700',
   },
   {
@@ -36,7 +36,7 @@ const stats = [
   { value: '20+', label: 'Años de Experiencia' },
   { value: '1000m', label: 'Profundidad Máxima' },
   { value: '100%', label: 'Trabajos Garantizados' },
-  { value: '24/7', label: 'Disponibilidad' },
+  { value: '24/7', label: 'Atención Telefónica' },
 ];
 
 export default function WhyChooseUs() {
@@ -55,10 +55,10 @@ export default function WhyChooseUs() {
 
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Brindamos servicios profesionales de{' '}
-            <strong>perforación de pozos de agua en Mendoza, San Juan, San Luis, Noroeste, Noreste, Region Pampeana y Patagonia</strong>, incluyendo
+            <strong>perforación de pozos de agua en toda Argentina</strong> (Mendoza, San Juan, San Luis, Noroeste, Noreste, Región Pampeana y Patagonia), incluyendo
             bobinados, filmaciones, limpieza de perforaciones, venta de bombas y asesoramiento
             técnico. Trabajamos con clientes{' '}
-            <strong>rurales, residenciales e industriales en toda la región</strong>.
+            <strong>rurales, residenciales e industriales en todo el país</strong>.
           </p>
         </div>
 

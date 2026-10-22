@@ -61,8 +61,8 @@ export default function ReparacionPage() {
   return (
     <>
       <SEO
-        title="Reparación de Electrobombas en Mendoza y San Juan"
-        description="Servicio técnico especializado en reparación de electrobombas sumergibles y de superficie. Diagnóstico, bobinado, repuestos originales y prueba en banco. Mendoza y San Juan."
+        title="Reparación de Electrobombas en Toda Argentina"
+        description="Servicio técnico especializado en reparación de electrobombas sumergibles y de superficie. Diagnóstico, bobinado, repuestos originales y prueba en banco. Atendemos en toda Argentina."
         canonical="/reparacion"
       />
       <Breadcrumb label="Reparación de Electrobombas" />
@@ -73,14 +73,14 @@ export default function ReparacionPage() {
 
           <div className="inline-flex items-center gap-2 bg-red-700/30 border border-red-500/30 text-red-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6">
             <Cog className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-            Servicio especializado · Mendoza y San Juan
+            Servicio especializado · Toda Argentina
           </div>
 
           {/* Título — reducido en mobile para evitar overflow */}
           <h1 className="text-xl sm:text-3xl lg:text-5xl font-semibold mb-3 sm:mb-5 leading-tight">
             Reparación de Electrobombas Sumergibles
             <span className="block text-gray-400 text-base sm:text-2xl lg:text-3xl font-normal mt-1">
-              Mendoza y San Juan
+              Toda Argentina
             </span>
           </h1>
 
@@ -89,7 +89,7 @@ export default function ReparacionPage() {
             <p className={`text-gray-300 text-sm sm:text-lg leading-relaxed ${!descExpanded ? 'line-clamp-2 sm:line-clamp-none' : ''}`}>
               Servicio profesional de reparación, bobinado y mantenimiento de electrobombas sumergibles
               de toda marca y potencia. Más de 20 años de experiencia garantizan la calidad de cada
-              trabajo. Atendemos particulares, productores agrícolas e industrias en toda la región cuyana.
+              trabajo. Atendemos particulares, productores agrícolas e industrias en toda Argentina.
             </p>
             <button
               onClick={() => setDescExpanded((v) => !v)}
@@ -141,8 +141,8 @@ export default function ReparacionPage() {
             reparación de impulsores y diagnóstico eléctrico completo.
           </p>
           <p className={`text-gray-600 text-sm sm:text-lg leading-relaxed ${!descExpanded ? 'hidden sm:block' : ''}`}>
-            Brindamos este servicio a toda la provincia de <strong>Mendoza, San Juan, San Luis
-            y regiones aledañas</strong>. El presupuesto de reparación es siempre sin cargo y
+            Brindamos este servicio a <strong>toda Argentina: Mendoza, San Juan, San Luis
+            y el resto del país</strong>. El presupuesto de reparación es siempre sin cargo y
             sin compromiso.
           </p>
           <button
