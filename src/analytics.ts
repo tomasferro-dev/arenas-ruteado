@@ -2,9 +2,9 @@
 // Cada valor es el "send_to" completo que entrega Google Ads, con la forma
 // 'AW-18529547397/etiqueta'. Mientras un valor esté vacío, ese evento no se envía.
 const CONVERSIONS = {
-  whatsapp: '',
-  telefono: '',
-  formulario: '',
+  whatsapp: 'AW-18529547397/ste1CKO4-KwdEIXpyYNF',
+  telefono: 'AW-18529547397/oijyCMCt_qwdEIXpyYNF',
+  formulario: 'AW-18529547397/nXtSCOGk-qwdEIXpyYNF',
 } as const;
 
 export type ConversionKind = keyof typeof CONVERSIONS;
