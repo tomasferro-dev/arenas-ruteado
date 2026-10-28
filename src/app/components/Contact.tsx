@@ -3,6 +3,7 @@ import { Phone, MapPin, Clock, Mail, Linkedin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { CONTACT } from "../data";
 import logo from "../../assets/logo.png";
+import { trackConversion } from "../../analytics";
 
 interface ContactProps {
   compact?: boolean; // true = versión /home
@@ -20,6 +21,7 @@ export default function Contact({ compact = false }: ContactProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Hola! Me gustaría solicitar un presupuesto:\n\nNombre: ${formData.nombre}\nEmail: ${formData.email}\nTeléfono: ${formData.telefono}\nServicio: ${formData.servicio}\nMensaje: ${formData.mensaje}`;
+    trackConversion("formulario");
     window.open(
       `https://wa.me/${CONTACT.whatsappNumber}?text=${encodeURIComponent(msg)}`,
       "_blank",
